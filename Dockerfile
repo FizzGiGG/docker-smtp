@@ -1,7 +1,5 @@
 FROM debian:buster
 
-MAINTAINER Me, not you "spambalamous@gmail.com"
-
 RUN apt-get update && \
     apt-get install -y exim4-daemon-light && \
     apt-get clean && \
