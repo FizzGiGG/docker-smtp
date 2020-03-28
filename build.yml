@@ -2,4 +2,4 @@ exim:
   notify:
   - github
   - email-ses
-  registry: namshi.net
+  registry: beauc.us
