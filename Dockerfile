@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM ubuntu:bionic
 
 RUN apt-get update && \
     apt-get install -y exim4-daemon-light && \
