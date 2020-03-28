@@ -48,3 +48,24 @@ Example:
  * SMARTHOST_PASSWORD=secret
  * SMARTHOST_ALIASES=*.mysmtp.com
 ```
+
+### Docker-Compose example:
+
+```
+Example:
+
+  smtp_relay:
+    image: fizzgigg/docker-smtp
+    container_name: smtp_relay
+    restart: always
+    ports:
+      - "25:25"
+    volumes:
+      - ~/docker/smtp-relay/etc/exim4/_docker_additional_macros:/etc/exim4/_docker_additional_macros
+    environment:
+      - RELAY_NETWORKS=:192.168.0.0/24:172.17.0.0/24:172.18.0.0/24
+      - GMAIL_USER=username@gmail.com
+      - GMAIL_PASSWORD=<passwordhere>
+      - DISABLE_IPV6=true
+
+```
