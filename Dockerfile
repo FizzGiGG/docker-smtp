@@ -1,6 +1,6 @@
 FROM debian:buster
 
-MAINTAINER Oluwaseun Obajobi "oluwaseun.obajobi@namshi.com"
+MAINTAINER Me, not you "spambalamous@gmail.com"
 
 RUN apt-get update && \
     apt-get install -y exim4-daemon-light && \
